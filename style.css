@@ -1,0 +1,1244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111631;
+    color: #fff;
+}
+
+header {
+    background-color: #0b1124;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4CAF50;
+}
+
+header img {
+    width: 240px; /* Define el ancho de la imagen */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+.logo h1 {
+    font-size: 2em;
+    color: #f2f2f2;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #101731;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.hero input[type="text"] {
+    background-color: #101731; /* Color de fondo azul oscuro */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 70%; /* Ancho al 100% */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    margin-right: 10px; /* Espacio a la derecha del cuadro de entrada */
+}
+
+.hero button {
+    background-color: #25ebc1; /* Cambia a un color que desees */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espacio interno del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h3 {
+    font-size: 100px;
+    margin: 0;
+    color: #00ff85;
+}
+
+.hero-text h2 {
+    font-size: 70px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.hero-text p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.hero-text input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.hero-text button {
+    background-color: #00ff85;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #101731;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-text button:hover {
+    background-color: #00e676;
+}
+
+.hero-image img {
+    max-width: 500px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    header img {
+        width: 200px; /* Reduce el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    nav a {
+        padding: 10px 0;
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-text h3 {
+        font-size: 50px; /* Reduce el tamaño del texto grande */
+    }
+
+    .hero-text h2 {
+        font-size: 40px; /* Reduce el tamaño del subtítulo */
+    }
+
+    .hero-text p {
+        font-size: 14px; /* Aumenta ligeramente el tamaño del texto */
+        max-width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+    }
+
+    .hero-text input {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 10px; /* Agrega espacio debajo del input */
+    }
+
+    .hero-text button {
+        width: 100%; /* Botón a pantalla completa en móviles */
+    }
+
+    .hero-image img {
+        max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h3 {
+        font-size: 40px; /* Ajusta aún más el tamaño del texto para móviles pequeños */
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 12px; /* Ajusta el tamaño de fuente de los enlaces de navegación */
+    }
+}
+
+.services {
+    background-color: #101731;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.services .main-heading {
+    font-size: 15px; 
+    border: 1px solid #66d9e8;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 0;
+    margin-bottom: 60px;
+    background-color: #2c634a;
+    color: #40f140;
+    display: inline;
+}
+
+.services h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #e8e8e8;
+    line-height: 1.2;
+}
+
+.services p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #e8e8e8;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.service-cards {
+    background-color: #101731;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.service-card {
+    background-color: #1a1d2e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    cursor: pointer;
+}
+.card_price-box h3.card_title {
+    font-size: 20px; /* Cambia el tamaño según tus necesidades */
+    margin: 0 0 10px 0; /* Espacio abajo (10px) */
+}
+
+.card_price-box p.card_price {
+    font-size: 32px; /* Cambia el tamaño del párrafo según tus necesidades */
+    margin: 0 0 5px 0; /* Espacio abajo (5px) */
+    color: #2a2929; /* Opcional: puedes ajustar el color si lo deseas */
+}
+
+.card_price-box p.card_price-description {
+    font-size: 14px; /* Cambia el tamaño del párrafo según tus necesidades */
+    margin: 0; /* Elimina márgenes predeterminados */
+    color: #666; /* Opcional: puedes ajustar el color si lo deseas */
+}
+.card__list li {
+    font-size: 14px; /* Cambia el tamaño según tus necesidades */
+    color: #2a2929; /* Opcional: ajusta el color si lo deseas */
+    margin-left: 10px; /* Opcional: para un pequeño espacio entre el ícono y el texto */
+}
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.servive-card_price-box h3{
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.service-card img {
+    max-width: 150px;
+    margin-bottom: 50px;
+}
+
+.service-card h3 {
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: #00ff85;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+.select-btn {
+    background-color: #00ff85;
+    color: #1a1d2e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Media Queries */
+
+/* Pantallas grandes (laptops y desktops) */
+@media (min-width: 1024px) {
+    .service-cards {
+        gap: 40px; /* Más espacio entre tarjetas en pantallas grandes */
+    }
+    
+    .service-card {
+        max-width: 350px; /* Las tarjetas pueden ser un poco más grandes */
+    }
+}
+
+/* Tablets (horizontal y vertical) */
+@media (max-width: 1024px) {
+    .services h2 {
+        font-size: 40px; /* Ajusta el tamaño del h2 para tablets */
+    }
+
+    .service-card {
+        max-width: 90%; /* Ocupa la mayor parte de la pantalla en tablets */
+        padding: 25px;
+    }
+
+    .service-card img {
+        max-width: 120px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+}
+
+/* Móviles grandes (vertical y horizontal) */
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 35px; /* Tamaño adecuado para móviles grandes */
+    }
+
+    .service-cards {
+        flex-direction: column; /* Cambia la disposición a una columna */
+        gap: 20px; /* Ajusta el espacio entre tarjetas */
+    }
+
+    .service-card {
+        max-width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+        padding: 20px;
+        margin: 0 auto; /* Centrar las tarjetas */
+    }
+
+    .service-card img {
+        max-width: 100px; /* Ajuste del tamaño de la imagen */
+    }
+
+    .service-card h3 {
+        font-size: 16px;
+    }
+
+    .service-card p {
+        font-size: 12px;
+    }
+}
+
+/* Móviles pequeños (pantallas de 480px o menos) */
+@media (max-width: 480px) {
+    .services h2 {
+        font-size: 30px; /* Tamaño aún más pequeño para móviles pequeños */
+    }
+
+    .service-card {
+        padding: 15px; /* Reduce el padding en las tarjetas */
+    }
+
+    .service-card img {
+        max-width: 80px; /* Imágenes más pequeñas en pantallas pequeñas */
+    }
+
+    .service-card h3 {
+        font-size: 14px;
+    }
+
+    .service-card p {
+        font-size: 12px;
+    }
+
+    .select-btn {
+        padding: 8px 16px; /* Reduce el tamaño del botón */
+        font-size: 12px; /* Ajusta el tamaño del texto del botón */
+    }
+}
+
+
+/* Estilos para la sección principal */
+.continuo {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #101731;
+    color: #ffffff;
+    margin: 0;
+}
+
+.main-heading {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #66d9e8;
+    background-color: #2c634a;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #40f140;
+    margin-bottom: 60px;
+}
+
+.continuo h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.continuo h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.continuo p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #40f140;
+}
+
+.icon-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #101731;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.icon-nav a {
+    text-decoration: none;
+    color: #c1c1c1;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+    background-color: #101731;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    border: none;
+}
+
+.icon-nav i {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #4a4e69;
+}
+
+.icon-nav a:hover {
+    color: #ffffff;
+    background-color: #101731;
+    transform: translateY(-5px);
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    flex-wrap: wrap;
+}
+
+.card_content {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    max-width: 300px;
+    margin: 10px auto;
+    position: relative; 
+}
+
+/.card_content {
+    display: flex;
+    flex-direction: column; /* Cambiado para alinear los elementos en columna */
+    align-items: center; /* Centramos el contenido */
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    max-width: 300px;
+    margin: 10px auto;
+}
+.card_checkbox {
+    margin-right: 10px; /* Espacio entre el checkbox y el contenido */
+}
+.card_content h2 {
+    font-size: 1.5em; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+    color: #333; /* Color del texto */
+}
+
+.card_content:hover {
+    background-color: #00BFFF; /* Color celeste al pasar el mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card_inner img {
+    max-width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card_title,
+.card_price,
+.card_price-description,
+.card__list {
+    color: #000; /* Color negro para el texto */
+}
+.checkbox-icon {
+    width: 20px; /* Ancho del SVG */
+    height: 20px; /* Alto del SVG */
+    margin-right: 10px; /* Espacio entre el SVG y el texto */
+}
+.card__list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.card__list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.card__list i {
+    color: #007bff; /* Color de los íconos */
+}
+
+/* Estilo para el checkbox */
+.card_radio {
+    margin-bottom: 15px; /* Espacio entre el checkbox y el contenido */
+    accent-color: green; /* Cambia el color del checkbox a verde */
+}
+
+/* Botón */
+.card_button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.card_button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+
+/* Pantallas grandes (laptops y desktops) */
+@media (min-width: 1024px) {
+    .card_content {
+        max-width: 350px;
+    }
+}
+
+/* Tablets (horizontal y vertical) */
+@media (max-width: 1024px) {
+    .continuo h2 {
+        font-size: 35px;
+    }
+
+    .icon-nav i {
+        font-size: 22px;
+    }
+
+    .card_content {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .card_inner img {
+        max-width: 50px;
+    }
+
+    .card_title {
+        font-size: 18px;
+    }
+
+    .card_price {
+        font-size: 20px;
+    }
+}
+
+/* Móviles grandes (vertical y horizontal) */
+@media (max-width: 768px) {
+    .continuo h2 {
+        font-size: 30px;
+    }
+
+    .card_content {
+        max-width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .card_inner img {
+        max-width: 40px;
+    }
+
+    .card_title {
+        font-size: 16px;
+    }
+
+    .card_price {
+        font-size: 18px;
+    }
+
+    .card_button {
+        padding: 8px;
+    }
+}
+
+/* Móviles pequeños (pantallas de 480px o menos) */
+@media (max-width: 480px) {
+    .continuo h2 {
+        font-size: 25px;
+    }
+
+    .icon-nav {
+        flex-direction: column;
+    }
+
+    .icon-nav i {
+        font-size: 20px;
+    }
+
+    .card_content {
+        padding: 50px;
+        max-width: 100%;
+    }
+
+    .card_inner img {
+        max-width: 50px;
+    }
+
+    .card_title {
+        font-size: 14px;
+    }
+
+    .card_price {
+        font-size: 16px;
+    }
+
+    .card_button {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+  section.despues {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 200px;
+    margin: auto;
+    background-color: #f5f5f5; /* Fondo blanco */
+    border-radius: 0; /* Sin bordes redondeados */
+    box-shadow: none; /* Sin sombra */
+}
+
+.despues .content-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; /* Espacio entre texto e imagen */
+    margin-bottom: 50px; /* Espacio adicional entre bloques */
+}
+
+.despues .text-content {
+    flex: 1;
+}
+
+.despues .illustration {
+    max-width: 300px;
+    height: auto;
+}
+
+.illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration img {
+    width: 500px;               /* Establece el ancho de la imagen a 150px */
+    height: 360px;              /* Establece la altura de la imagen a 150px */
+    border: none;               /* Elimina cualquier borde */
+    border-radius: 0;          /* Elimina el borde redondeado si es necesario */
+    box-shadow: none;           /* Elimina cualquier sombra */
+}
+.despues .main-surf {
+    font-size: 15px; 
+    border: 1px solid #66d9e8; /* Marco verde claro alrededor del p */
+    padding: 5px 10px;         /* Espacio pequeño entre el texto y el borde */
+    border-radius: 50px;       /* Bordes redondeados */
+    margin: 0;                 /* Elimina el margen por defecto */
+    margin-bottom: 60px;       /* Ajusta este valor para lograr el espacio deseado */
+    background-color: #2c634a; /* Color de fondo verde oscuro */
+    color: #40f140;            /* Color del texto verde claro */
+    display: inline;           /* Ajusta el p al tamaño del contenido */
+}
+.despues .main-test {
+    font-size: 15px; 
+    border: 1px solid #66d9e8; /* Marco verde claro alrededor del p */
+    padding: 5px 10px;         /* Espacio pequeño entre el texto y el borde */
+    border-radius: 50px;       /* Bordes redondeados */
+    margin: 0;                 /* Elimina el margen por defecto */
+    margin-bottom: 60px;       /* Ajusta este valor para lograr el espacio deseado */
+    background-color: #2c634a; /* Color de fondo verde oscuro */
+    color: #40f140;            /* Color del texto verde claro */
+    display: inline;           /* Ajusta el p al tamaño del contenido */
+}
+
+
+.despues h3 {
+    font-size: 29px;
+    font-weight: bold;
+    color: #3f4fd8;
+    margin-top: 40px;          /* Ajusta este valor para agregar espacio arriba del h2 */
+    margin-bottom: 20px;     
+}
+
+.despues p {
+    color: #6c757d;
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 500px; /* Máximo ancho del texto */
+    margin: 10px 0; 
+    line-height: 1.5; /* Espaciado entre líneas */
+
+}
+
+.despues h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 500px; /* Máximo ancho del texto */
+    margin: 10px 0; 
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #333;
+}
+
+
+.get-started {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3f4fd8;
+    text-decoration: none;
+}
+
+.get-started:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1024px) {
+    section.despues {
+        padding: 100px; /* Ajusta el padding para pantallas medianas */
+    }
+
+    .despues .content-block {
+        flex-direction: column; /* Cambia a diseño en columna para pantallas medianas */
+    }
+
+    .illustration img {
+        max-width: 400px; /* Reduce el tamaño máximo de la imagen en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    section.despues {
+        padding: 50px; /* Reduce aún más el padding para pantallas pequeñas */
+    }
+
+    .illustration img {
+        max-width: 300px; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    }
+
+    .despues h3 {
+        font-size: 25px; /* Reduce el tamaño de los encabezados */
+    }
+
+    .despues p,
+    .despues h1 {
+        font-size: 14px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    section.despues {
+        padding: 20px; /* Padding más pequeño para pantallas muy pequeñas */
+    }
+
+    .illustration img {
+        max-width: 100%; /* La imagen ocupa todo el ancho disponible en pantallas pequeñas */
+    }
+
+    .despues h3 {
+        font-size: 22px; /* Ajuste de encabezados para pantallas muy pequeñas */
+    }
+
+    .despues p,
+    .despues h1 {
+        font-size: 12px; /* Ajuste de texto para pantallas muy pequeñas */
+    }
+}
+section.otro {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.otro {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: none;
+    box-shadow: none;
+}
+
+.otro .main-texto {
+    font-size: 15px;
+    border: 1px solid #66d9e8;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 0;
+    margin-bottom: 60px;
+    background-color: #2c634a;
+    color: #40f140;
+    display: inline;
+}
+
+.otro h2 {
+    color: #000;
+    font-size: 36px;
+    margin: 0 0 20px 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.otro p {
+    color: #000;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.mapa img {
+    width: 100%;
+    max-width: 1100px; /* Limita el tamaño máximo en pantallas grandes */
+    height: auto;
+}
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 1024px) {
+    .otro h2 {
+        font-size: 32px; /* Reduce el tamaño del h2 en pantallas medianas */
+    }
+
+    .otro p {
+        max-width: 90%; /* Ajusta el ancho máximo para mejor lectura en pantallas medianas */
+    }
+
+    .mapa img {
+        max-width: 900px; /* Ajusta el tamaño del mapa para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .otro h2 {
+        font-size: 28px; /* Reduce el tamaño del h2 para pantallas más pequeñas */
+    }
+
+    .otro p {
+        max-width: 100%; /* Elimina la restricción de ancho en pantallas pequeñas */
+        font-size: 14px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+
+    .mapa img {
+        max-width: 700px; /* Reduce el tamaño del mapa en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .otro h2 {
+        font-size: 24px; /* Ajusta el tamaño del h2 para pantallas muy pequeñas */
+    }
+
+    .otro p {
+        font-size: 12px; /* Texto más pequeño en pantallas muy pequeñas */
+    }
+
+    .mapa img {
+        max-width: 100%; /* El mapa ocupa el 100% del ancho en pantallas pequeñas */
+    }
+}
+
+.final {
+    background-color: #1a2b4d;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 45px;
+    max-width: 1200px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.subtitle {
+    background: rgba(0, 255, 200, 0.1);
+    padding: 5px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.subtitle p {
+    color: #00ff85;
+    font-size: 14px;
+    margin: 0;
+}
+
+.final h2 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.final h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.final p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+.cta-button {
+    background-color: #00ff85;
+    color: #1a2b4d;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00e676;
+}
+
+.final::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+/* Estilos base para el footer */
+footer {
+    background-color: #17203f;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    width: 30%;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex; /* Mantiene los iconos en una fila */
+    align-items: center; /* Alinea los iconos verticalmente con el logo */
+}
+
+.social-icons .icon {
+    margin-left: 15px; /* Espacio entre los iconos (ajustado a 15px para más separación) */
+    color: gray; /* Color gris para los iconos */
+    font-size: 24px; /* Tamaño del icono */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.social-icons .icon:hover {
+    color: #000; /* Cambia a negro al pasar el mouse */
+}
+.footer-left p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.newsletter {
+    margin-top: 20px;
+}
+
+.newsletter h3 {
+    color: #25ebc1;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    background-color: #101731;
+    color: #fff;
+    font-size: 12px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #25ebc1;
+    color: #111631;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.footer-right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.internal-pages, .partners {
+    width: 100%;
+}
+
+.internal-pages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.internal-pages ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #bfc7e1;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.internal-pages ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.internal-pages h3 {
+    color: #25ebc1;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.partners {
+    margin-top: 30px;
+}
+
+.partners ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.partners ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #bfc7e1;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.partners ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.partners h3 {
+    color: #25ebc1;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #bfc7e1;
+    margin-top: 10px;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        align-items: center;
+        padding: 0 10px; /* Ajuste de padding */
+    }
+
+    .footer-left, .footer-right {
+        width: 100%; /* Los elementos ocupan el 100% del ancho */
+        margin-bottom: 20px; /* Espacio inferior entre secciones */
+    }
+
+    .footer-left p {
+        font-size: 14px; /* Aumenta un poco el tamaño del texto en móviles */
+    }
+
+    .newsletter input {
+        width: 100%; /* El input ocupa el 100% del ancho en móviles */
+        margin-right: 0; /* Quita el margen a la derecha */
+        margin-bottom: 10px; /* Añade espacio inferior entre el input y el botón */
+    }
+
+    .newsletter button {
+        width: 100%; /* El botón ocupa el 100% del ancho en móviles */
+    }
+
+    .internal-pages ul, .partners ul {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-left p, .newsletter p {
+        font-size: 13px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .newsletter h3, .partners h3, .internal-pages h3 {
+        font-size: 14px; /* Tamaño de encabezado más pequeño en pantallas pequeñas */
+    }
+
+    .newsletter input, .newsletter button {
+        font-size: 13px; /* Reduce el tamaño de la fuente de los inputs y botones */
+    }
+}
